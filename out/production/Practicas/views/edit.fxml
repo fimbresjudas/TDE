@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="paneEditar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.editarController">
+   <children>
+      <JFXButton fx:id="cancelarBtn" layoutX="397.0" layoutY="216.0" onMouseClicked="#cancelarEditar" prefHeight="26.0" prefWidth="90.0" text="Cancelar">
+         <graphic>
+            <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourses/cancelar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="aceptarBtn" layoutX="397.0" layoutY="170.0" onMouseClicked="#aceptar" prefHeight="26.0" prefWidth="90.0" text="Aceptar">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourses/aceptar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="199.0" layoutY="122.0" text="Nombre:" />
+      <Label layoutX="199.0" layoutY="187.0" text="Numero:" />
+      <Label layoutX="202.0" layoutY="251.0" text="Correo:" />
+      <ImageView fitHeight="84.0" fitWidth="90.0" layoutX="246.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resourses/contact.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="365.0" stroke="#47076963" strokeType="INSIDE" width="149.0">
+         <fill>
+            <RadialGradient centerX="1.0" centerY="0.5" focusDistance="1.0" radius="1.0">
+               <stops>
+                  <Stop color="#6902c9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill></Rectangle>
+      <Label layoutX="162.0" layoutY="27.0" prefHeight="18.0" prefWidth="39.0" text="Editar:" />
+      <JFXTextField fx:id="nombreAdd" layoutX="201.0" layoutY="140.0" prefHeight="26.0" prefWidth="181.0" />
+      <JFXTextField fx:id="numeroAdd" layoutX="200.0" layoutY="203.0" prefHeight="26.0" prefWidth="182.0" />
+      <JFXTextField fx:id="correoAdd" layoutX="202.0" layoutY="269.0" prefHeight="26.0" prefWidth="182.0" />
+   </children>
+</AnchorPane>

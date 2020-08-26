@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="paneLista" prefHeight="365.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <JFXButton fx:id="editarBtn" layoutX="333.0" layoutY="19.0" onMouseClicked="#editar" prefHeight="0.0" prefWidth="90.0" text="Editar">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourses/edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="412.0" stroke="#4b007a39" strokeType="INSIDE" width="149.0">
+         <fill>
+            <RadialGradient centerX="1.0" centerY="0.5458015558373837" focusDistance="1.0" radius="1.0">
+               <stops>
+                  <Stop color="#6902c9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill></Rectangle>
+      <JFXButton fx:id="eliminarBtn" layoutX="433.0" layoutY="19.0" onMouseClicked="#delete" text="Eliminar">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourses/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TableView fx:id="tableContactos" layoutX="61.0" layoutY="73.0" prefHeight="297.0" prefWidth="410.0">
+        <columns>
+          <TableColumn fx:id="nombreColumn" prefWidth="151.99993896484375" text="Nombre" />
+          <TableColumn fx:id="numeroColumn" prefWidth="100.79998779296875" text="Numero" />
+            <TableColumn fx:id="correoColumn" prefWidth="156.79999389648435" text="Correo" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="atrasBtn" layoutX="23.0" layoutY="19.0" onMouseClicked="#atrasB" text="Atras">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourses/atras.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <Label layoutX="153.0" layoutY="21.0" text="Registro de contactos" textFill="#78129a">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="nuevoB" layoutX="201.0" layoutY="100.0" onMouseClicked="#cargarAgregar" prefHeight="39.0" prefWidth="124.0" text="Nuevo">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourses/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="verB" layoutX="187.0" layoutY="172.0" onMouseClicked="#cargarLista" prefHeight="39.0" prefWidth="151.0" text="Ver contactos">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourses/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="365.0" stroke="#3203427f" strokeType="INSIDE" width="124.0">
+         <fill>
+            <RadialGradient centerX="0.7222222646077473" centerY="0.4503816357095733" focusAngle="5.73" focusDistance="1.0" radius="1.0">
+               <stops>
+                  <Stop color="#6902c9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill></Rectangle>
+      <JFXButton fx:id="salirB" layoutX="224.0" layoutY="255.0" onMouseClicked="#salir" text="Salir">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resourses/cancelar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
